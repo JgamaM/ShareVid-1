@@ -8,7 +8,7 @@ import ibm_db
 app = Flask(__name__)
 app.secret_key = "TROCAR ESSA SENHA"
 app.permanent_session_lifetime = timedelta(days=20)
-conn = ibm_db.connect("Server=share-vid.herokuapp.com;Port=50000;Hostname=dashdb-txn-sbox-yp-dal09-11.services.dal.bluemix.net; Database=BLUDB;UID=dgq68475;PWD=dcfgng39q@r3jpk2;", 'dgq68475', 'dcfgng39q@r3jpk2')
+conn = ibm_db.connect("Server=127.0.0.1;Port=50000;Hostname=dashdb-txn-sbox-yp-dal09-11.services.dal.bluemix.net; Database=BLUDB;UID=dgq68475;PWD=dcfgng39q@r3jpk2;", 'dgq68475', 'dcfgng39q@r3jpk2')
 	
 
 @app.route("/")
